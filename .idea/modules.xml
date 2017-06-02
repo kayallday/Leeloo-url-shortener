@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/../Leeloo-url-shortener/.idea/DWA_2017_06.iml" filepath="$PROJECT_DIR$/../Leeloo-url-shortener/.idea/DWA_2017_06.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/DWA_2017_06.iml" filepath="$PROJECT_DIR$/.idea/DWA_2017_06.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/Leeloo-url-shortener.iml" filepath="$PROJECT_DIR$/.idea/Leeloo-url-shortener.iml" />
     </modules>
   </component>
 </project>
