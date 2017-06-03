@@ -1,5 +1,23 @@
-node_modules
-views
-test
-utility
+# Created by .ignore support plugin (hsz.mobi)
+### Example user template template
 
+
+# IntelliJ project files
+.idea
+
+# Unused Folders
+# (these may be used in later versions but are not currently needed)
+spec/tests
+spec
+utility
+views
+models
+lib
+
+# node modules library
+node_modules
+*.log
+.env
+.env.json
+out
+gen
