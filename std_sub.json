@@ -1,5 +1,7 @@
 {
   "author_last_name": "Beard",
   "github_public_repo_link": "https://github.com/kmbeard/Leeloo-url-shortener",
-  "github_tagged_commit_link": ""
+  "github_tagged_commit_link": "https://github.com/kmbeard/Leeloo-url-shortener/tags",
+  "tagged_version": "v1.0.0",
+  "comments": "Something is off I think, I am still trying to get things under test to find the error and trying to even implement postman to figure out the problem. If there is any guidance you can give me I would greatly appreciate it."
 }
