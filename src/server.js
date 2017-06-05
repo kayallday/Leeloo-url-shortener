@@ -9,11 +9,11 @@ var app = express();
 
 
 var port = 3000;
-// var port = process.env.PORT || 4000;
+// var port = process.env.PORT || 3000;
 
 app.use(body_parser.json());
 
-app.use('/api', require('../routes/api.js')(express));
+app.use('/api/v1', require('../src/routes/api.js')(express));
 
 var server = app.listen(port, function () {
     console.log('The Server is running on', port);

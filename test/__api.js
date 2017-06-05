@@ -17,17 +17,25 @@ describe('API', function() {
 
     it('/ should return specified object.', function testHealth(done) {
         request(server)
-            .get('/api/')
-            .get('Accept', 'application/json')
+            .get('/api/v1')
+            .set('Accept', 'application/json')
             .expect('Content-Type', /json/)
             .expect(200, { hello: 'world'} ,done)
     });
 
     it('/status return specified healthy:true.', function testHealth(done) {
         request(server)
-            .get('/api/status')
-            .get('Accept', 'application/json')
+            .get('/api/v1/status')
+            .set('Accept', 'application/json')
             .expect('Content-Type', /json/)
             .expect(200, { healthy: true} ,done)
     });
+
+    it('/user/id should return a user obj with id.', function testHealth(done) {
+      request(server)
+            .get('/api/v1/user/347')
+            .set('Accept', 'application/json')
+            .expect('Content-Type', /json/)
+            .expect(200, { user: {id: 347}} ,done);
+    })
 });
