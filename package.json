@@ -4,7 +4,7 @@
   "description": "Leeloo Minai Lekarariba-Laminai-Tchai Ekbat De Sebat. Shortening the URL's for Corbin Dallas.",
   "main": "src/server.js",
   "scripts": {
-    "test": "jasmine"
+    "test": "mocha"
   },
   "keywords": [
     "API",
@@ -14,15 +14,18 @@
   "license": "ISC",
   "dependencies": {
     "express": "^4.14.0",
-    "nodemon": "^1.11.0"
+    "mysql": "^2.13.0",
+    "nodemon": "^1.11.0",
+    "sequelize": "^3.30.4"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/kmbeard/Leeloo-url-shortener.git"
   },
   "devDependencies": {
-    "body-parser": "^1.15.2",
+    "body-parser": "^3.10.10",
     "chai": "^4.0.1",
+    "dotenv": "^4.0.0",
     "expect": "^1.20.2",
     "mocha": "^3.4.2"
   }
