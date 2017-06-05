@@ -17,7 +17,7 @@ describe('API', function() {
 
     it('/ should return specified object.', function testHealth(done) {
         request(server)
-            .get('/api/v1')
+            .get('/api/v1/urls')
             .set('Accept', 'application/json')
             .expect('Content-Type', /json/)
             .expect(200, { hello: 'world'} ,done)
@@ -25,7 +25,7 @@ describe('API', function() {
 
     it('/status return specified healthy:true.', function testHealth(done) {
         request(server)
-            .get('/api/v1/status')
+            .get('/api/v1/urls/status')
             .set('Accept', 'application/json')
             .expect('Content-Type', /json/)
             .expect(200, { healthy: true} ,done)
@@ -33,7 +33,7 @@ describe('API', function() {
 
     it('/user/id should return a user obj with id.', function testHealth(done) {
       request(server)
-            .get('/api/v1/user/347')
+            .get('/api/v1/urls/user/347')
             .set('Accept', 'application/json')
             .expect('Content-Type', /json/)
             .expect(200, { user: {id: 347}} ,done);
